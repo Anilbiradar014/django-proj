@@ -1,0 +1,14 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<script src="{% static 'js/app.js' %}"></script>
+{% include 'base.html' %}
+
+<h3>This is home page</h3>
+<img src="{% static 'images/anil.jpg' %}" alt="">
+<br/>
+<a href="{% url 'create-task' %}">Create a new task</a>
+
+<a href="{% url 'register' %}">Register a new user</a>
+<br>
+<a href="{% url 'my_login' %}">LOG IN</a>

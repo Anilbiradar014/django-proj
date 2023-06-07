@@ -1,0 +1,11 @@
+{% include 'base.html' %}
+
+<h3>Delete the task</h3>
+<br>
+
+<form method="POST" autocomplete="off" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>Are you sure you want to delete this task?</p>
+    <a href="{% url 'task' %}">Return to tasks</a>
+    <input type="submit" value="Delete task">
+</form>
